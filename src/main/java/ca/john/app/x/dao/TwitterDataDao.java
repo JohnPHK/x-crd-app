@@ -30,4 +30,5 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
   public TwitterData deleteById(String s) {
     return null;
   }
+
 }

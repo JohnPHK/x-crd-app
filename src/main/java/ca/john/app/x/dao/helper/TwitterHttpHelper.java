@@ -68,7 +68,7 @@ public class TwitterHttpHelper implements HttpHelper {
   public HttpResponse httpPost(URI uri, String jsonBody) {
     HttpPost httpPost = new HttpPost(uri);
 
-    StringEntity entity = null;
+    StringEntity entity;
     try {
       entity = new StringEntity(jsonBody);
     } catch (UnsupportedEncodingException e) {
