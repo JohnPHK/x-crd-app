@@ -69,4 +69,21 @@ public class Data {
     this.additionalProperties.put(name, value);
   }
 
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("\tedit_history_tweet_ids = ");
+    for (String id : getEditHistoryTweetIds()) {
+      sb.append(id + ", ");
+    }
+    sb.append("\n");
+    sb.append("\ttext: ");
+    sb.append(getText());
+    sb.append("\n");
+    sb.append("\tid : ");
+    sb.append(getId());
+    sb.append("\n");
+    return sb.toString();
+  }
+
 }

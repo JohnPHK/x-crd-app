@@ -10,12 +10,15 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "data"
 })
 @Generated("jsonschema2pojo")
 public class TwitterData {
+
+  private int status;
 
   @JsonProperty("data")
   private Data data;
@@ -37,9 +40,25 @@ public class TwitterData {
     return this.additionalProperties;
   }
 
+  public int getStatus() {
+    return status;
+  }
+
+  public void setStatus(int status) {
+    this.status = status;
+  }
+
   @JsonAnySetter
   public void setAdditionalProperty(String name, Object value) {
     this.additionalProperties.put(name, value);
   }
 
-}
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("Status: " + getStatus() + "\n");
+    sb.append("Data: \n");
+    sb.append(getData() == null ? "" : getData().toString());
+    return sb.toString();
+  }
+  }

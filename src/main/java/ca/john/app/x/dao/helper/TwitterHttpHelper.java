@@ -99,10 +99,10 @@ public class TwitterHttpHelper implements HttpHelper {
 //    String accessToken = System.getenv("accessToken");
 //    String tokenSecret = System.getenv("tokenSecret");
 
-    String consumerKey = "4CjhcpPe1G4msie8yLtcZfdUR";
-    String consumerSecret = "ZWSwqwAk0XxMSm6vqkVgRjl4TQx1yDAwhLLnkm3XAdO0jsz0Kf";
-    String accessToken = "4896442139-6vhnV9EaJkehF6SuJ0IcTDINOhfsfhMh4N4ThFv";
-    String tokenSecret = "INUw4y6tvtHJcR8B6Dw5vJ2D35Px63zMeR7cJ3YpF6eu8";
+    String consumerKey = "qNfCpBwpHUEAIgvYN4dkNRmum";
+    String consumerSecret = "wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu";
+    String accessToken = "4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw";
+    String tokenSecret = "lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX";
 
     HttpHelper httpHelper =
         new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
@@ -111,14 +111,14 @@ public class TwitterHttpHelper implements HttpHelper {
 
     // Test Post Method
     System.out.println("========== Test Post Method ==========");
-    String json = "{\"text\": \"Test from CRD App\"}";
+    String json = "{\"text\": \"Happy New year 2025 Alex\"}";
 
-    response = httpHelper.httpPost(new URI("https://api.X.com/2/tweets"), json);
+    response = httpHelper.httpPost(new URI("https://api.x.com/2/tweets"), json);
     System.out.println(EntityUtils.toString(response.getEntity()));
 
     // Test Get Method
     System.out.println("========== Test Get Method ==========");
-    response = httpHelper.httpGet(new URI("https://api.X.com/2/tweets/1872403048800346384"));
+    response = httpHelper.httpGet(new URI("https://api.x.com/2/tweets/1872403048800346384"));
     System.out.println(EntityUtils.toString(response.getEntity()));
 
   }
