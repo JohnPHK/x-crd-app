@@ -27,6 +27,7 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
 
   // Response code
   private static final int HTTP_OK = 200;
+  private static final int HTTP_ACCEPTED = 201;
 
   private final HttpHelper httpHelper;
 
@@ -47,7 +48,7 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
     }
 
     HttpResponse response = httpHelper.httpPost(uri, createJsonBody(text));
-    return parseResponseBody(response, HTTP_OK);
+    return parseResponseBody(response, HTTP_ACCEPTED);
   }
 
   @Override
@@ -125,9 +126,9 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
         tokenSecret);
     CrdDao<TwitterData, String> dao = new TwitterDataDao(httpHelper1);
 
-//    System.out.println("========= Testing Create Method ==========");
-//    TwitterData twitterData_post = dao.create("Hopefully 2025 is a better year");
-//    System.out.println(twitterData_post);
+    System.out.println("========= Testing Create Method ==========");
+    TwitterData twitterData_post = dao.create("Hopefully 2025 is a better year please!");
+    System.out.println(twitterData_post);
 
     System.out.println("========= Testing FindById Method ==========");
     TwitterData twitterData_get = dao.findById("1872403048800346384");

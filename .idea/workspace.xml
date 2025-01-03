@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/TwitterCLIApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/TwitterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/TwitterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/CrdDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/CrdDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/TwitterHttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/TwitterHttpHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/XApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/XApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,7 +57,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.JsonParser.executor": "Run",
-    "Application.TwitterDataDao.executor": "Debug",
+    "Application.TwitterDataDao.executor": "Run",
     "Application.TwitterHttpHelper.executor": "Run",
     "Application.XApiTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,7 +71,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.XApiTest">
+  <component name="RunManager" selected="Application.TwitterDataDao">
     <configuration name="JsonParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.john.app.x.example.JsonParser" />
       <module name="x" />
@@ -134,9 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwitterDataDao" />
         <item itemvalue="Application.JsonParser" />
         <item itemvalue="Application.TwitterHttpHelper" />
-        <item itemvalue="Application.TwitterDataDao" />
       </list>
     </recent_temporary>
   </component>
@@ -150,21 +148,5 @@
       <updated>1735264382956</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java</url>
-          <line>128</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
