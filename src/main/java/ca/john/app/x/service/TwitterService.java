@@ -4,6 +4,7 @@ import ca.john.app.x.dao.CrdDao;
 import ca.john.app.x.model.TwitterData;
 import org.springframework.beans.factory.annotation.Autowired;
 
+@org.springframework.stereotype.Service
 public class TwitterService implements Service {
 
   private final CrdDao<TwitterData, String> dao;
