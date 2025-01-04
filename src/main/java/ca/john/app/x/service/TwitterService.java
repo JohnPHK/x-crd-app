@@ -21,7 +21,7 @@ public class TwitterService implements Service {
 
   @Override
   public TwitterData showTweet(String id) {
-    return null;
+    return dao.findById(id);
   }
 
   @Override

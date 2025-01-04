@@ -68,7 +68,14 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
 
   @Override
   public TwitterData deleteById(String s) {
-    return null;
+    URI uri;
+    try {
+      uri = new URI(API_URI + "/" + s);
+    } catch (URISyntaxException e) {
+      throw new IllegalArgumentException("Invalid ID to delete", e);
+    }
+    HttpResponse response = httpHelper.httpDelete(uri);
+    return parseResponseBody(response, HTTP_OK);
   }
 
   private String createJsonBody(String text) {

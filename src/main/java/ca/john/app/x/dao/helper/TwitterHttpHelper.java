@@ -9,6 +9,7 @@ import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
 import oauth.signpost.exception.OAuthException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -85,6 +86,22 @@ public class TwitterHttpHelper implements HttpHelper {
     try {
       consumer.sign(httpPost);
       return httpClient.execute(httpPost);
+    } catch (OAuthException e) {
+      e.printStackTrace();
+      throw new RuntimeException("Authorization with O-Auth failed", e);
+    } catch (IOException e) {
+      e.printStackTrace();
+      throw new RuntimeException("Issue with sending request", e);
+    }
+  }
+
+  @Override
+  public HttpResponse httpDelete(URI uri) {
+    HttpDelete httpDelete = new HttpDelete(uri);
+
+    try {
+      consumer.sign(httpDelete);
+      return httpClient.execute(httpDelete);
     } catch (OAuthException e) {
       e.printStackTrace();
       throw new RuntimeException("Authorization with O-Auth failed", e);

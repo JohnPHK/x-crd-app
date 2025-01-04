@@ -26,6 +26,8 @@ public class Data {
   private String id;
   @JsonProperty("text")
   private String text;
+  @JsonProperty("deleted")
+  private boolean deleted;
   @JsonIgnore
   private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
@@ -59,6 +61,16 @@ public class Data {
     this.text = text;
   }
 
+  @JsonProperty("deleted")
+  public boolean isDeleted() {
+    return deleted;
+  }
+
+  @JsonProperty("deleted")
+  public void setDeleted(boolean deleted) {
+    this.deleted = deleted;
+  }
+
   @JsonAnyGetter
   public Map<String, Object> getAdditionalProperties() {
     return this.additionalProperties;
@@ -83,6 +95,8 @@ public class Data {
     sb.append("\tid : ");
     sb.append(getId());
     sb.append("\n");
+    sb.append("\tdeleted: ");
+    sb.append(isDeleted());
     return sb.toString();
   }
 

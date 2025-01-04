@@ -19,4 +19,10 @@ public interface HttpHelper {
    */
   HttpResponse httpPost(URI uri, String jsonBody);
 
+  /**
+   * Execute a HTTP Delete call
+   * @param uri
+   * @return
+   */
+  HttpResponse httpDelete(URI uri);
 }
