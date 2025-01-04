@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/HttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/HttpHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/TwitterHttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/TwitterHttpHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/TwitterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/TwitterService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

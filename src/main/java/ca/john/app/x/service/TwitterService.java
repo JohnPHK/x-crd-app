@@ -26,7 +26,7 @@ public class TwitterService implements Service {
 
   @Override
   public TwitterData deleteTweets(String id) {
-    return null;
+    return dao.deleteById(id);
   }
 
 }
