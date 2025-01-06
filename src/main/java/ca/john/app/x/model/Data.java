@@ -84,19 +84,32 @@ public class Data {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("\tedit_history_tweet_ids = ");
-    for (String id : getEditHistoryTweetIds()) {
-      sb.append(id + ", ");
+
+    if (getEditHistoryTweetIds() != null) {
+      sb.append("\tedit_history_tweet_ids = ");
+      for (String id : getEditHistoryTweetIds()) {
+        sb.append(id + ", ");
+      }
+      sb.append("\n");
     }
-    sb.append("\n");
-    sb.append("\ttext: ");
-    sb.append(getText());
-    sb.append("\n");
-    sb.append("\tid : ");
-    sb.append(getId());
-    sb.append("\n");
-    sb.append("\tdeleted: ");
-    sb.append(isDeleted());
+
+    if (getText() != null) {
+      sb.append("\ttext: ");
+      sb.append(getText());
+      sb.append("\n");
+    }
+
+    if (getId() != null) {
+      sb.append("\tid : ");
+      sb.append(getId());
+      sb.append("\n");
+    }
+
+    if (isDeleted()) {
+      sb.append("\tdeleted: ");
+      sb.append(isDeleted());
+    }
+
     return sb.toString();
   }
 

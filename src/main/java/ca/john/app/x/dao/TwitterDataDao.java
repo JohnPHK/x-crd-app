@@ -8,7 +8,6 @@ import ca.john.app.x.util.JsonUtil;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import oauth.signpost.exception.OAuthException;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
@@ -125,7 +124,7 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
     return twitterData;
   }
 
-  public static void main(String[] args) throws URISyntaxException, OAuthException, IOException {
+  public static void main(String[] args) {
     String consumerKey = "qNfCpBwpHUEAIgvYN4dkNRmum";
     String consumerSecret = "wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu";
     String accessToken = "4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw";
@@ -135,13 +134,17 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
         tokenSecret);
     CrdDao<TwitterData, String> dao = new TwitterDataDao(httpHelper1);
 
-    System.out.println("========= Testing Create Method ==========");
-    TwitterData twitterData_post = dao.create("Hopefully 2025 is a better year please!");
-    System.out.println(twitterData_post);
+//    System.out.println("========= Testing Create Method ==========");
+//    TwitterData twitterData_post = dao.create("Hopefully 2025 is a better year please!");
+//    System.out.println(twitterData_post);
+//
+//    System.out.println("========= Testing FindById Method ==========");
+//    TwitterData twitterData_get = dao.findById("1872403048800346384");
+//    System.out.println(twitterData_get);
 
-    System.out.println("========= Testing FindById Method ==========");
-    TwitterData twitterData_get = dao.findById("1872403048800346384");
-    System.out.println(twitterData_get);
+    System.out.println("========= Testing DeleteById Method ==========");
+    TwitterData twitterData_delete = dao.deleteById("1874296946099175555");
+    System.out.println(twitterData_delete);
   }
 
 }

@@ -40,10 +40,12 @@ public class TwitterData {
     return this.additionalProperties;
   }
 
+  @JsonProperty("status")
   public int getStatus() {
     return status;
   }
 
+  @JsonProperty("status")
   public void setStatus(int status) {
     this.status = status;
   }

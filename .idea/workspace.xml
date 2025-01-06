@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/TwitterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/TwitterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/TwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/TwitterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.JsonParser.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TwitterDataDao.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TwitterHttpHelper.executor&quot;: &quot;Run&quot;,
-    &quot;Application.XApiTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/john/Desktop/repos/x-crd-app&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.JsonParser.executor": "Run",
+    "Application.TwitterDataDao.executor": "Debug",
+    "Application.TwitterHttpHelper.executor": "Run",
+    "Application.XApiTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/john/Desktop/repos/x-crd-app",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.TwitterDataDao">
     <configuration name="JsonParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.john.app.x.example.JsonParser" />
@@ -142,5 +147,26 @@
       <updated>1735264382956</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.http.impl.execchain.HttpResponseProxy" memberName="original" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((BasicHttpResponse)((HttpResponseProxy)response).original).params" custom="org.apache.http.message.BasicHttpResponse,org.apache.http.impl.execchain.HttpResponseProxy" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

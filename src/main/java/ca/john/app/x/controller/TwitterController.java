@@ -2,7 +2,6 @@ package ca.john.app.x.controller;
 
 import ca.john.app.x.model.TwitterData;
 import ca.john.app.x.service.Service;
-import ca.john.app.x.service.TwitterService;
 import java.util.Collections;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
