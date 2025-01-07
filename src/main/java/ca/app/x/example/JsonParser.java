@@ -1,6 +1,6 @@
-package ca.john.app.x.example;
+package ca.app.x.example;
 
-import ca.john.app.x.example.dto.Company;
+import ca.app.x.example.dto.Company;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

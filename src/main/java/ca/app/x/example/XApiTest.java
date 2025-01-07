@@ -1,7 +1,7 @@
-package ca.john.app.x.example;
+package ca.app.x.example;
 
 
-import ca.john.app.x.model.TwitterData;
+import ca.app.x.model.TwitterData;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 

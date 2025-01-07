@@ -1,10 +1,10 @@
-package ca.john.app.x.dao;
+package ca.app.x.dao;
 
 
-import ca.john.app.x.dao.helper.HttpHelper;
-import ca.john.app.x.dao.helper.TwitterHttpHelper;
-import ca.john.app.x.model.TwitterData;
-import ca.john.app.x.util.JsonUtil;
+import ca.app.x.dao.helper.HttpHelper;
+import ca.app.x.dao.helper.TwitterHttpHelper;
+import ca.app.x.model.TwitterData;
+import ca.app.x.util.JsonUtil;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;

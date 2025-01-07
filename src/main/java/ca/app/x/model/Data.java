@@ -1,4 +1,4 @@
-package ca.john.app.x.model;
+package ca.app.x.model;
 
 import java.util.LinkedHashMap;
 import java.util.List;

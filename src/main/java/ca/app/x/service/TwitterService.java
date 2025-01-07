@@ -1,7 +1,7 @@
-package ca.john.app.x.service;
+package ca.app.x.service;
 
-import ca.john.app.x.dao.CrdDao;
-import ca.john.app.x.model.TwitterData;
+import ca.app.x.dao.CrdDao;
+import ca.app.x.model.TwitterData;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @org.springframework.stereotype.Service

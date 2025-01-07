@@ -1,4 +1,4 @@
-package ca.john.app.x.dao.helper;
+package ca.app.x.dao.helper;
 
 import java.net.URI;
 import org.apache.http.HttpResponse;

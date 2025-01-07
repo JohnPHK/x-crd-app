@@ -1,6 +1,6 @@
-package ca.john.app.x.service;
+package ca.app.x.service;
 
-import ca.john.app.x.model.TwitterData;
+import ca.app.x.model.TwitterData;
 
 public interface Service {
   /**

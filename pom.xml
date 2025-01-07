@@ -11,7 +11,7 @@
     <relativePath/>
   </parent>
 
-  <groupId>ca.john.app</groupId>
+  <groupId>ca.app</groupId>
   <artifactId>x</artifactId>
   <version>1.0-SNAPSHOT</version>
 

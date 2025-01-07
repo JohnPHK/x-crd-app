@@ -1,7 +1,6 @@
-package ca.john.app.x.controller;
+package ca.app.x.controller;
 
-import ca.john.app.x.model.TwitterData;
-import java.util.List;
+import ca.app.x.model.TwitterData;
 
 public interface Controller {
   /**
@@ -29,5 +28,5 @@ public interface Controller {
    * @return a list of deleted tweets
    * @throws IllegalArgumentException if args are invalid
    */
-  List<TwitterData> deleteTweet(String[] args);
+  TwitterData deleteTweet(String[] args);
 }

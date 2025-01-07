@@ -1,4 +1,4 @@
-package ca.john.app.x.dao;
+package ca.app.x.dao;
 
 import org.apache.http.entity.StringEntity;
 

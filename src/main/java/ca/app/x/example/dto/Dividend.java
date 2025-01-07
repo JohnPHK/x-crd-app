@@ -1,4 +1,4 @@
-package ca.john.app.x.example.dto;
+package ca.app.x.example.dto;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;

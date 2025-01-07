@@ -1,6 +1,6 @@
-package ca.john.app.x.util;
+package ca.app.x.util;
 
-import ca.john.app.x.model.TwitterData;
+import ca.app.x.model.TwitterData;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;

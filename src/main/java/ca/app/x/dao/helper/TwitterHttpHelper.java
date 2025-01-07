@@ -1,4 +1,4 @@
-package ca.john.app.x.dao.helper;
+package ca.app.x.dao.helper;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -15,6 +15,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -40,6 +41,7 @@ public class TwitterHttpHelper implements HttpHelper {
   /**
    * Default constructor (not used for now)
    */
+  @Autowired
   public TwitterHttpHelper() {
     String consumerKey = System.getenv("consumerKey");
     String consumerSecret = System.getenv("consumerSecret");

@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/TwitterCLIApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/controller/TwitterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/spring/TwitterCLIBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/spring/TwitterCLIComponentScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/spring/TwitterCLISpringBoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/util/TweetUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/TwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/TwitterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/TwitterCLIApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/controller/TwitterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/CrdDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/CrdDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/HttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/helper/HttpHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/helper/TwitterHttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/helper/TwitterHttpHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/example/JsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/XApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/example/XApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/dto/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/example/dto/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/dto/Dividend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/example/dto/Dividend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/example/dto/Financial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/example/dto/Financial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/model/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/model/TwitterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/model/TwitterData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/service/TwitterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/service/TwitterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/john/app/x/util/TweetUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +76,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.JsonParser.executor": "Run",
+    "Application.TwitterCLIBean.executor": "Run",
+    "Application.TwitterCLIComponentScan.executor": "Run",
+    "Application.TwitterCLISpringBoot.executor": "Run",
     "Application.TwitterDataDao.executor": "Debug",
     "Application.TwitterHttpHelper.executor": "Run",
     "Application.XApiTest.executor": "Run",
@@ -70,13 +94,73 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TwitterDataDao">
+  <component name="RunManager" selected="Application.TwitterCLISpringBoot">
     <configuration name="JsonParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.john.app.x.example.JsonParser" />
       <module name="x" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.john.app.x.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLIBean" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
+        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
+        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
+        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.spring.TwitterCLIBean" />
+      <module name="x" />
+      <option name="PROGRAM_PARAMETERS" value="delete 1874276810495545486" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLIComponentScan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
+        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
+        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
+        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.spring.TwitterCLIComponentScan" />
+      <module name="x" />
+      <option name="PROGRAM_PARAMETERS" value="delete 1874279681798631545" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterCLISpringBoot" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
+        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
+        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
+        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.spring.TwitterCLISpringBoot" />
+      <module name="x" />
+      <option name="PROGRAM_PARAMETERS" value="delete 1874280215637062030" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.spring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,6 +215,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwitterCLIComponentScan" />
         <item itemvalue="Application.TwitterDataDao" />
         <item itemvalue="Application.JsonParser" />
         <item itemvalue="Application.TwitterHttpHelper" />
@@ -152,9 +237,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ca/john/app/x/dao/TwitterDataDao.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java</url>
           <line>145</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/app/x/TwitterCLIApp.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/app/x/spring/TwitterCLISpringBoot.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
