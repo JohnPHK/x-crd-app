@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataIntTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/helper/TwitterHttpHelperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/util/TweetUtilUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,9 @@
     "Application.XApiTest.executor": "Run",
     "JUnit.TweetUtilUnitTest.executor": "Run",
     "JUnit.TweetUtilUnitTest.jsonToObject.executor": "Run",
+    "JUnit.TwitterDataUnitTest.executor": "Run",
+    "JUnit.TwitterDataUnitTest.testCreate.executor": "Run",
+    "JUnit.TwitterDataUnitTest.testFindById.executor": "Run",
     "JUnit.TwitterHttpHelperTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -79,20 +80,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TwitterHttpHelperTest">
-    <configuration name="JsonParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.john.app.x.example.JsonParser" />
-      <module name="x" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.john.app.x.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TwitterDataUnitTest">
     <configuration name="TwitterCLIBean" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
@@ -103,26 +91,6 @@
       <option name="MAIN_CLASS_NAME" value="ca.app.x.spring.TwitterCLIBean" />
       <module name="x" />
       <option name="PROGRAM_PARAMETERS" value="delete 1874276810495545486" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.app.x.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwitterCLIComponentScan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
-        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
-        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
-        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="ca.app.x.spring.TwitterCLIComponentScan" />
-      <module name="x" />
-      <option name="PROGRAM_PARAMETERS" value="delete 1874279681798631545" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.app.x.spring.*" />
@@ -146,19 +114,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.app.x.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwitterDataDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.john.app.x.dao.TwitterDataDao" />
-      <module name="x" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.john.app.x.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,6 +171,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwitterDataUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterDataUnitTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataUnitTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterDataUnitTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataUnitTest" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TwitterHttpHelperTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="x" />
       <extension name="coverage">
@@ -240,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TwitterDataUnitTest" />
+        <item itemvalue="JUnit.TwitterDataUnitTest.testFindById" />
+        <item itemvalue="JUnit.TwitterDataUnitTest.testCreate" />
         <item itemvalue="JUnit.TweetUtilUnitTest" />
         <item itemvalue="JUnit.TweetUtilUnitTest.jsonToObject" />
-        <item itemvalue="Application.TwitterCLIComponentScan" />
-        <item itemvalue="Application.TwitterDataDao" />
-        <item itemvalue="Application.JsonParser" />
       </list>
     </recent_temporary>
   </component>
@@ -260,15 +262,6 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.apache.http.impl.execchain.HttpResponseProxy" memberName="original" />

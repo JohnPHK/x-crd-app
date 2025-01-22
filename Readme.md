@@ -4,8 +4,13 @@ This is a Java application that interacts with X REST API to perform create, rea
 
 The application performs each operation by creating an HTTP request and sending it to the X API. Then, it parses and processes the HTTP response received from X API.
 
-The libraries utilized include Jackson and Mockito. Handling of all dependencies and structuring of the project was accomplished through the use of Maven. Finally, the project was deployed using Docker.
+`Maven` is used for handling of all dependencies and structuring of the project was accomplished.
 
+For data binding, `jackson` was used for mapping between JSON String and a Java Object.
+ 
+`JUnit` and `Mockito` were utilized for thorough unit and integration testing.
+
+Finally, the project was deployed using Docker.
 
 # Quick Start
 

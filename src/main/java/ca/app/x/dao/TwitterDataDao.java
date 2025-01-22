@@ -45,7 +45,7 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
     try {
       uri = new URI(API_URI);
     } catch (URISyntaxException e) {
-      throw new IllegalArgumentException("Invalid tweet input", e);
+      throw new IllegalArgumentException("Invalid URI; Possibly invalid text.", e);
     }
 
     HttpResponse response = httpHelper.httpPost(uri, createJsonBody(text));
@@ -53,12 +53,12 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
   }
 
   @Override
-  public TwitterData findById(String s) {
+  public TwitterData findById(String id) {
     URI uri;
     try {
-      uri = new URI(API_URI + "/" + s);
+      uri = new URI(API_URI + "/" + id);
     } catch (URISyntaxException e) {
-      throw new IllegalArgumentException("Invalid tweet input", e);
+      throw new IllegalArgumentException("Invalid URI; Possibly Invalid Id", e);
     }
 
     HttpResponse response = httpHelper.httpGet(uri);
@@ -66,10 +66,10 @@ public class TwitterDataDao implements CrdDao<TwitterData, String>{
   }
 
   @Override
-  public TwitterData deleteById(String s) {
+  public TwitterData deleteById(String id) {
     URI uri;
     try {
-      uri = new URI(API_URI + "/" + s);
+      uri = new URI(API_URI + "/" + id);
     } catch (URISyntaxException e) {
       throw new IllegalArgumentException("Invalid ID to delete", e);
     }
