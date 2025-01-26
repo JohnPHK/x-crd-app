@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/controller/TwitterControllerIntTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/controller/TwitterControllerUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/service/TwitterServiceIntTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/service/TwitterServiceUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/app/x/util/TweetUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/util/TweetUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataDaoIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataDaoIntTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/app/x/util/TweetUtilUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/util/TweetUtilUnitTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +58,7 @@
     "Application.XApiTest.executor": "Run",
     "JUnit.TweetUtilUnitTest.executor": "Run",
     "JUnit.TweetUtilUnitTest.jsonToObject.executor": "Run",
+    "JUnit.TwitterControllerIntTest.executor": "Run",
     "JUnit.TwitterControllerUnitTest.executor": "Run",
     "JUnit.TwitterControllerUnitTest.testPostTweet.executor": "Run",
     "JUnit.TwitterDataDaoIntTest.executor": "Run",
