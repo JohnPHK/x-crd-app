@@ -7,6 +7,9 @@ public class TweetUtil {
     if (tweetText.length() > 140) {
       throw new IllegalArgumentException("Text length too large, limit to 140 char");
     }
+    if (tweetText.isEmpty()) {
+      throw new IllegalArgumentException("Text length too small, limit to 1 char");
+    }
   }
 
   public static void validateTweetId(String id) {

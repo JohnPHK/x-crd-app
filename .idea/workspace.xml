@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d34744fd-a9ef-4d55-8c18-1f2ced19aab1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/controller/TwitterControllerIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/controller/TwitterControllerUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/service/TwitterServiceIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/service/TwitterServiceUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/dao/TwitterDataDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/app/x/util/TweetUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/app/x/util/TweetUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataDaoIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/dao/TwitterDataDaoIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/app/x/util/TweetUtilUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/app/x/util/TweetUtilUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +68,16 @@
     "Application.XApiTest.executor": "Run",
     "JUnit.TweetUtilUnitTest.executor": "Run",
     "JUnit.TweetUtilUnitTest.jsonToObject.executor": "Run",
+    "JUnit.TwitterControllerUnitTest.executor": "Run",
+    "JUnit.TwitterControllerUnitTest.testPostTweet.executor": "Run",
+    "JUnit.TwitterDataDaoIntTest.executor": "Run",
     "JUnit.TwitterDataUnitTest.executor": "Run",
     "JUnit.TwitterDataUnitTest.testCreate.executor": "Run",
     "JUnit.TwitterDataUnitTest.testFindById.executor": "Run",
     "JUnit.TwitterHttpHelperTest.executor": "Run",
+    "JUnit.TwitterServiceIntTest.executor": "Run",
+    "JUnit.TwitterServiceIntTest.testCreateFindAndDelete.executor": "Run",
+    "JUnit.TwitterServiceUnitTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -80,7 +91,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TwitterDataUnitTest">
+  <component name="RunManager" selected="JUnit.TwitterControllerIntTest">
     <configuration name="TwitterCLIBean" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
@@ -140,38 +151,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TweetUtilUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwitterControllerIntTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="x" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.app.x.util.*" />
+          <option name="PATTERN" value="ca.app.x.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.app.x.util" />
-      <option name="MAIN_CLASS_NAME" value="ca.app.x.util.TweetUtilUnitTest" />
+      <option name="PACKAGE_NAME" value="ca.app.x.controller" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.controller.TwitterControllerIntTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
+        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
+        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
+        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.controller" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.controller.TwitterControllerUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TweetUtilUnitTest.jsonToObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwitterControllerUnitTest.testPostTweet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="x" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.app.x.util.*" />
+          <option name="PATTERN" value="ca.app.x.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.app.x.util" />
-      <option name="MAIN_CLASS_NAME" value="ca.app.x.util.TweetUtilUnitTest" />
-      <option name="METHOD_NAME" value="jsonToObject" />
+      <option name="PACKAGE_NAME" value="ca.app.x.controller" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.controller.TwitterControllerUnitTest" />
+      <option name="METHOD_NAME" value="testPostTweet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwitterDataUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwitterDataDaoIntTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="x" />
       <extension name="coverage">
         <pattern>
@@ -180,13 +213,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.app.x.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataUnitTest" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataDaoIntTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
+        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
+        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
+        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwitterDataUnitTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwitterDataDaoUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="x" />
       <extension name="coverage">
         <pattern>
@@ -195,25 +235,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.app.x.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataUnitTest" />
-      <option name="METHOD_NAME" value="testCreate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwitterDataUnitTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="x" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.app.x.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.app.x.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataUnitTest" />
-      <option name="METHOD_NAME" value="testFindById" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.dao.TwitterDataDaoUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,13 +263,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwitterServiceIntTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.service" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.service.TwitterServiceIntTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="consumerKey" value="qNfCpBwpHUEAIgvYN4dkNRmum" />
+        <env name="consumerSecret" value="wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu" />
+        <env name="accessToken" value="4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw" />
+        <env name="tokenSecret" value="lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterServiceIntTest.testCreateFindAndDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.service" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.service.TwitterServiceIntTest" />
+      <option name="METHOD_NAME" value="testCreateFindAndDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterServiceUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="x" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.app.x.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.app.x.service" />
+      <option name="MAIN_CLASS_NAME" value="ca.app.x.service.TwitterServiceUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TwitterDataUnitTest" />
-        <item itemvalue="JUnit.TwitterDataUnitTest.testFindById" />
-        <item itemvalue="JUnit.TwitterDataUnitTest.testCreate" />
-        <item itemvalue="JUnit.TweetUtilUnitTest" />
-        <item itemvalue="JUnit.TweetUtilUnitTest.jsonToObject" />
+        <item itemvalue="JUnit.TwitterServiceIntTest.testCreateFindAndDelete" />
+        <item itemvalue="JUnit.TwitterControllerUnitTest" />
+        <item itemvalue="JUnit.TwitterControllerUnitTest.testPostTweet" />
+        <item itemvalue="JUnit.TwitterServiceUnitTest" />
+        <item itemvalue="JUnit.TwitterDataDaoUnitTest" />
       </list>
     </recent_temporary>
   </component>

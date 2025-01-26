@@ -41,6 +41,14 @@ public class TweetUtilUnitTest {
       assertTrue(true);
     }
 
+    /* Fail Scenario v2 */
+    try {
+      TweetUtil.validateTweetText("");
+      fail();
+    } catch (IllegalArgumentException e) {
+      assertTrue(true);
+    }
+
     /* Successful Scenario */
     try {
       TweetUtil.validateTweetText("Test");
