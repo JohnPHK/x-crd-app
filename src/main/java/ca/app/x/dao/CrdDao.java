@@ -1,7 +1,5 @@
 package ca.app.x.dao;
 
-import org.apache.http.entity.StringEntity;
-
 public interface CrdDao<T, ID> {
   /**
    * Create an entity(Tweet) to the underlying storage

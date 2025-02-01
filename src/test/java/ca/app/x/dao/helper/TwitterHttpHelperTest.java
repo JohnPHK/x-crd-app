@@ -1,10 +1,8 @@
 package ca.app.x.dao.helper;
 
-import com.google.gdata.util.common.base.PercentEscaper;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import oauth.signpost.exception.OAuthException;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.junit.Before;
