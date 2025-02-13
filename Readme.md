@@ -4,7 +4,7 @@ This is a Java application that interacts with the RESTful X API to create, read
 
 `Maven` is used to manage all dependencies and build the project's directory structures. `Jackson` was used to map a JSON String to a Java Object. `JUnit` and `Mockito` were utilized for thorough unit and integration testing. Finally, the project was deployed using `Docker`.
 
-The main purpose of this project was to educate me about the Spring Framework. This project taught me the mechanisms behind Inversion of Control (IoC) and Dependency Injection (DI) and how the Spring framework implements IoC/DI to architect application components. Below shows my implementations of spring's different approaches to manage application components.
+The main purpose of this project was to educate myself with Spring Framework. This project taught me the mechanisms behind Inversion of Control (IoC) and Dependency Injection (DI) and how the Spring framework implements IoC/DI to architect application components. Below shows different ways of spring implementation and how each manage application components.
 
 # Quick Start
 
