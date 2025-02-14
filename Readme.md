@@ -1,12 +1,16 @@
-# Introduction
+# X CRD Application
 
-This is a Java application that interacts with the RESTful X API to create, read or delete (CRD) a tweet. The application performs each operation by making an HTTP request and sending it to the X API. Then, it parses and processes the HTTP response received from X API.
+---
 
-`Maven` is used to manage all dependencies and build the project's directory structures. `Jackson` was used to map a JSON String to a Java Object. `JUnit` and `Mockito` were utilized for thorough unit and integration testing. Finally, the project was deployed using `Docker`.
+## Introduction
+
+This is a Java application that interacts with the RESTful X API to create, read or delete (CRD) a tweet. The application performs each operation by making a corresponding HTTP request and sending it to the X API. Then, it parses and processes the HTTP response received from X API.
+
+`Maven` is used to manage all the dependencies and build the project's directory structure. `Jackson` was used to map a JSON String to a Java Object. `JUnit` and `Mockito` were utilized for thorough unit and integration testing. Finally, the project was deployed using `Docker`.
 
 The main purpose of this project was to educate myself with Spring Framework. This project taught me the mechanisms behind Inversion of Control (IoC) and Dependency Injection (DI) and how the Spring framework implements IoC/DI to architect application components. Below shows different ways of spring implementation and how each manage application components.
 
-# Quick Start
+## Quick Start
 <!--- how to package your app using mvn?-->
 First, clone the app to your local machine. Then, set the environment variables for OAuth 1.0a
 
@@ -38,9 +42,10 @@ docker run --rm \
     johnphk/x-crd-app post|show|delete <Status Message>
 ```
 
-# Design
+## Design
 
 ### UML diagram
+
 ![UML Diagram](./assets/uml_diagram.png)
 
 #### App/Main
@@ -53,17 +58,34 @@ This class represents the controller component of MVC architecture. Based on the
 
 #### Service
 
-This class represents service layer which sits between controller and data layer. It handles the business logic and finally calls DAO to retrieve/update data on X. It also performs sanity check to ensure no unsupported data is passed to X API
+This class represents the service layer, which acts as an intermediary between the controller and the data layer. It handles business logic and calls the DAO to retrieve or update data on X. Additionally, it performs sanity checks to ensure no unsupported data is passed to the X API.
 
 #### DAO
 
-DAO represents data layer in the application architecture. A DAO directly interacts with X API to retrieve or update data from X. It does so by constructing an URI that maps to either create, read or delete operation of data on X.
+The DAO represents the data layer in the application architecture. It directly interacts with the X API to retrieve or update data on X. It achieves this by constructing a URI that maps to the Create, Read, or Delete operations for the data on X.
 
 #### Model
 
+The model is designed to represent the JSON data received as a response from X API.
+
+For example,
+
+```json
+{
+    "data": {
+        "edit_history_tweet_ids": [
+            "1890255049797841060"
+        ],
+        "id": "1890255049797841060",
+        "text": "Hello Hello MY FRIENDS 2025"
+    }
+}
+```
+
+To represent JSON data as shown above, two model classes are implemented: TwitterData.java and Data.java. TwitterData.java serves as a wrapper class representing an entire response from the X API, while Data.java represents the values mapped from the data key.
+
 ## Spring
 
-# Test
+## Test
 
 ## Deployment
-
