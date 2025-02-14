@@ -1,10 +1,11 @@
 # X CRD Application
 
----
+* [Introduction](##Introduction)
+* [Quick Start](##Quick-Start)
 
 ## Introduction
 
-This is a Java application that interacts with the RESTful X API to create, read or delete (CRD) a tweet. The application performs each operation by making a corresponding HTTP request and sending it to the X API. Then, it parses and processes the HTTP response received from X API.
+This is a Java application that interacts with the RESTful X API to create, read or delete (CRD) a tweet. The applicat ion performs each operation by making a corresponding HTTP request and sending it to the X API. Then, it parses and processes the HTTP response received from X API.
 
 `Maven` is used to manage all the dependencies and build the project's directory structure. `Jackson` was used to map a JSON String to a Java Object. `JUnit` and `Mockito` were utilized for thorough unit and integration testing. Finally, the project was deployed using `Docker`.
 
@@ -14,10 +15,10 @@ The main purpose of this project was to educate myself with Spring Framework. Th
 <!--- how to package your app using mvn?-->
 First, clone the app to your local machine. Then, set the environment variables for OAuth 1.0a
 
-- `consumerKey`: The Consumer Key or called API key
-- `consumerSecret`: Consumer Secret or called API secret key
-- `accessToken`: The Access Token for read and write access
-- `tokenSecret`: The Secret Key for access token
+* `consumerKey`: The Consumer Key or called API key
+* `consumerSecret`: Consumer Secret or called API secret key
+* `accessToken`: The Access Token for read and write access
+* `tokenSecret`: The Secret Key for access token
 
 Then, package your application through mvn:
 
