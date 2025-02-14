@@ -113,8 +113,7 @@ In Spring framework, the two most fundamental components are Inversion of Contro
 * `@ComponentScan` approach
     
     In this approach, `@Autowire` annotation is used to command IoC container to inject dependency through the constructor.
-    \
-
+    \\
     `@Controller` is used to mark the controller of the MVC architecture.
     \
 
