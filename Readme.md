@@ -27,7 +27,7 @@ Above input to the terminal at the directory of the app will generate Uber JAR. 
 java -jar x_crd-1.0-SNAPSHOT.jar post|show|delete [options]
 ```
 
-Another way to run this would be to pull the docker image johnphk/x-crd-app from dockerhub. Then, run the following command:
+Another way to run this would be to pull the docker image `johnphk/x-crd-app` from dockerhub. Then, run the following command:
 
 ```bash
 docker run --rm \            
@@ -40,11 +40,26 @@ docker run --rm \
 
 # Design
 
-## UML diagram
+### UML diagram
+![UML Diagram](./assets/uml_diagram.png)
 
-## explain each component(app/main, controller, service, DAO) (30-50 words each)
+#### App/Main
 
-## Models
+This class serves as the initial entry point of the application to perform post, show or delete a status message. It parses the command-line arguments and invokes a controller to execute the post, show, or delete operations on X.
+
+#### Controller
+
+This class represents the controller component of MVC architecture. Based on the command-line argument received from the App/Main class, it invokes the corresponding method of service class to perform CRD operation.
+
+#### Service
+
+This class represents service layer which sits between controller and data layer. It handles the business logic and finally calls DAO to retrieve/update data on X. It also performs sanity check to ensure no unsupported data is passed to X API
+
+#### DAO
+
+DAO represents data layer in the application architecture. A DAO directly interacts with X API to retrieve or update data from X. It does so by constructing an URI that maps to either create, read or delete operation of data on X.
+
+#### Model
 
 ## Spring
 
