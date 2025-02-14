@@ -110,7 +110,7 @@ In Spring framework, the two most fundamental components are Inversion of Contro
     `@Configuration` makes `TwitterCLIBean` the config file determining overall dependency relationship of the application. Inside the class, each method with `@Beans` represent an individual dependency relationship between the input and the output class. Note that beans are directly injected into another bean through boilerplate code.
     <br/>
 
-* `@ComponentScan` approach.
+* `@ComponentScan` approach
     
     In this approach, `@Autowire` annotation is used to command IoC container to inject dependency through the constructor.
     \
