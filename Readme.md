@@ -111,7 +111,7 @@ In Spring framework, the two most fundamental components are Inversion of Contro
     <br/>
 
 * `@ComponentScan` approach.
-    \
+    
     In this approach, `@Autowire` annotation is used to command IoC container to inject dependency through the constructor.
     \
     \
@@ -129,6 +129,7 @@ In Spring framework, the two most fundamental components are Inversion of Contro
     <br/>
 
 * `Springboot` approach
+  
     In the last approach, Springboot was used for faster and more efficient development of the application.
 
     <img src="./assets/springboot.png" alt="@Springboot" width="700"/>
