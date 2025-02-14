@@ -134,7 +134,7 @@ In Spring framework, the two most fundamental components are Inversion of Contro
 * `Springboot` approach
   
     In the last approach, Springboot was used for faster and more efficient development of the application.
-    \
+    
     <img src="./assets/springboot.png" alt="@Springboot" width="700"/>
 
 ## Test
