@@ -1,9 +1,12 @@
 # X CRD Application
 
-* [Introduction](##Introduction)
-* [Quick Start](##Quick-Start)
+* [Introduction](#Introduction)
+* [Quick Start](#Quick-Start)
+* [Design](#Design)
 
 ## Introduction
+
+<a id=Introduction ></a>
 
 This is a Java application that interacts with the RESTful X API to create, read or delete (CRD) a tweet. The applicat ion performs each operation by making a corresponding HTTP request and sending it to the X API. Then, it parses and processes the HTTP response received from X API.
 
@@ -12,7 +15,9 @@ This is a Java application that interacts with the RESTful X API to create, read
 The main purpose of this project was to educate myself with Spring Framework. This project taught me the mechanisms behind Inversion of Control (IoC) and Dependency Injection (DI) and how the Spring framework implements IoC/DI to architect application components. Below shows different ways of spring implementation and how each manage application components.
 
 ## Quick Start
-<!--- how to package your app using mvn?-->
+
+<a id=Quick-Start ></a>
+
 First, clone the app to your local machine. Then, set the environment variables for OAuth 1.0a
 
 * `consumerKey`: The Consumer Key or called API key
@@ -44,6 +49,8 @@ docker run --rm \
 ```
 
 ## Design
+
+<a id=Design ></a>
 
 ### UML diagram
 
