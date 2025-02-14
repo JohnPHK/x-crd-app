@@ -104,36 +104,30 @@ In Spring framework, the two most fundamental components are Inversion of Contro
 * `@Beans` approach
 
     This is the most legacy approach to build a backbone of Spring application.
-    \\
+    
     <img src="./assets/bean_approach.png" alt="@Bean Approach" width="700"/>
-    \\
+    
     `@Configuration` makes `TwitterCLIBean` the config file determining overall dependency relationship of the application. Inside the class, each method with `@Beans` represent an individual dependency relationship between the input and the output class. Note that beans are directly injected into another bean through boilerplate code.
     <br/>
 
 * `@ComponentScan` approach
     
     In this approach, `@Autowire` annotation is used to command IoC container to inject dependency through the constructor.
-    \\
+    
     `@Controller` is used to mark the controller of the MVC architecture.
-    \
-
+    
     <img src="./assets/comp_scan_controller.png" alt="@Controller" width="700"/>
-    \
-
+    
     `@Service` is used to mark the service layer of the MVC architecture.
-    \
-
+    
     <img src="./assets/comp_scan_service.png" alt="@Service" width="700"/>
-    \
-
+    
     `@Repository` is used to mark the data layer.
-    \
-
+    
     <img src="./assets/comp_scan_data.png" alt="@Data" width="700"/>
-    \
-
+    
     Finally, below is how main method is implemented to summon a IoC container and initiate the application.
-    \
+    
     <img src="./assets/comp_scan_main.png" alt="@Main" width="700"/>
     <br/>
 
