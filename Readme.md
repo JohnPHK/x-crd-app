@@ -106,6 +106,7 @@ In Spring framework, the two most fundamental components are Inversion of Contro
     This is the most legacy approach to build a backbone of Spring application.
     \
     ![@Bean Approach](./assets/bean_approach.png)
+    <img src="./assets/bean_approach.png" alt="@Bean Approach" width="200"/>
     \
     `@Configuration` makes `TwitterCLIBean` the config file determining overall dependency relationship of the application. Inside the class, each method with `@Beans` represent an individual dependency relationship between the input and the output class. Note that beans are directly injected into another bean through boilerplate code.
     <br/>
