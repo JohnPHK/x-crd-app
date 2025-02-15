@@ -120,11 +120,6 @@ public class TwitterHttpHelper implements HttpHelper {
 //    String accessToken = System.getenv("accessToken");
 //    String tokenSecret = System.getenv("tokenSecret");
 
-    String consumerKey = "qNfCpBwpHUEAIgvYN4dkNRmum";
-    String consumerSecret = "wZ2qA1yvAjBknbr4l5yrpKn3uO68HVfjPp7UY8Ut53dtLS1nBu";
-    String accessToken = "4896442139-D4h6qKxKCw9nrImFrsa7TqluMQ5gFXCqdupqaYw";
-    String tokenSecret = "lCNmVaFcFQiDieQ2kzi9B2k3IYjA6jL97LeHDqzvZyJPX";
-
     HttpHelper httpHelper =
         new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
 
